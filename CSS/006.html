@@ -1,0 +1,51 @@
+<!-- sizing, border, opacity -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .one{
+            box-sizing: border-box;
+            border: solid 10px black;
+            padding: 20px;
+            width: 200px;
+            height: 200px;
+            background-color: indianred;
+            opacity: 0.7; /* 투명도. 1에 가까울수록 원색*/
+        }
+        .two{
+            border: double 10px black;
+            border-radius: 20px;
+            margin: 20px;
+            width: 200px;
+            height: 200px;
+            background-color: lightgreen;
+        }
+        .three{
+            border: dotted 5px black;
+            border-radius: 20px;
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+        }
+        .four{
+            margin: 20px;
+            border: groove 10px gray;
+            /* groove 명암, 안쪽으로 들어가 있는 것처럼
+            ridge, inset, outset
+            */
+            border-radius: 20px;
+            width: 200px;
+            height: 200px;
+            background-color: goldenrod
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
+</body>
+</html>
