@@ -1,3 +1,5 @@
+<!-- font size -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,9 +7,24 @@
     <title>Document</title>
     <style>
         .one {font-size: 32px;}
-        .two {font-size: 2em;}
+        .two {font-size: 2rem;} 
+        /* em 부모의 영향 받음. 부모 크기의 몇배
+        rem(root em)은 body에만 영향 받음. */
         .three{font-weight: normal;}
         div{font-size: 8px;}
+        .box-one{
+            width: 50vw;
+            height: 30vh;
+            background-color: green;
+        }
+        /* vw, vh 뷰포트 너비, 높이 지정.
+        보는 화면 크기에 따라 크기 달라짐. 반응형 웹디자인에 중요
+        브라우저 높이가 900px이면 1vh는 9px.*/
+        .box-two{
+            width: 200px;
+            height: 100px;
+            background-color: red;
+        }
     </style>
 
 </head>
@@ -17,5 +34,7 @@
     <p class="two">hello world</p>
     </div>
     <h1 class="three">hello world</h1>
+    <div class="box-one"></div>
+    <div class="box-two"></div>
 </body>
 </html>
