@@ -1,0 +1,56 @@
+<!-- position 이용한 중앙 정렬 -->
+<!DOCTYPE html>
+<htmtl lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 600px;
+            height: 600px;
+            background-color: skyblue;
+            /* margin: 0px auto; /* div가 가진 넓이에서 상한은 0px, 좌우는 auto로 해서 중앙으로 정렬됨. */
+            position: relative;
+            top: 10px;
+            left: 10px;
+        }
+        .one{
+            width: 100px;
+            height: 100px;
+            background-color: plum;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .two{
+            width: 100px;
+            height: 100px;
+            background-color: darkseagreen;
+            position: absolute;
+            margin: -50px;
+            top: 50%;
+            left: 50%;
+        }
+        /* absolute의 기준점을 선정하는 방법은 부모의 relative를 설정해주는 것이다! 
+        absolute만 사용해서 중앙 정렬하는 것도 가능하다. */
+        .four{
+            width: 100px;
+            height: 100px;
+            background-color: coral;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        } /* 화면 전체 중앙 정렬 */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="one"></div>
+        <div class="two"></div>
+    </div>
+    <div class="four"></div>
+</body>
+</htmtl>
